@@ -1,0 +1,1 @@
+include ':app', ':modulelib1', ':modulelib2', ':modulelib3', ':moduleinterface', ':base', ':util', ':moduleview', ':modulelib4', ':modulelib5', ':compiler', ':app2', ':resource'

@@ -1,0 +1,21 @@
+ext {
+    android = [
+            compileSdkVersion       : 23,
+            buildToolsVersion       : "23.0.3",
+            minSdkVersion           : 15,
+            targetSdkVersion        : 23,
+            androidSupportSdkVersion: "23.4.0",
+            espressoSdkVersion      : "2.2.2"
+    ]
+
+    dependencies = [
+            arouterapi     : 'com.alibaba:arouter-api:1.0.9',
+            aroutercompiler: 'com.alibaba:arouter-compiler:1.0.4',
+            supportdesign  : 'com.android.support:design:23.4.0',
+            recyclerviewv7 : 'com.android.support:recyclerview-v7:23.4.0',
+            supportv4      : 'com.android.support:support-v4:23.4.0',
+            appcompatv7    : 'com.android.support:appcompat-v7:23.4.0',
+            //分包
+            multidex       : 'com.android.support:multidex:1.0.1',
+    ]
+}
