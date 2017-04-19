@@ -40,5 +40,4 @@ public class ModuleManager {
         return options.hasModule(key);
     }
 
-
 }

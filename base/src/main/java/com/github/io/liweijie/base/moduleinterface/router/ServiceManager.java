@@ -17,14 +17,12 @@ import com.github.io.liweijie.base.moduleinterface.provider.IModule3Provider;
  */
 public class ServiceManager {
     //服务注入看自己的具体实现
-
+    //自动注入
     @Autowired
     IHomeProvider homeProvider;
     //可以不使用@Autowired，手动发现服务
     IModule1Provider module1Provider;
-    @Autowired
     IModule2Provider module2Provider;
-    @Autowired
     IModule3Provider module3Provider;
 
 

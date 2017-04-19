@@ -2,6 +2,7 @@ package com.github.io.liweijie.base.moduleinterface.module.home;
 
 import com.github.io.liweijie.base.moduleinterface.config.MyBundle;
 import com.github.io.liweijie.base.moduleinterface.provider.IHomeProvider;
+import com.github.io.liweijie.base.moduleinterface.router.ModuleManager;
 import com.github.io.liweijie.base.moduleinterface.router.MyRouter;
 
 /**
@@ -12,6 +13,9 @@ import com.github.io.liweijie.base.moduleinterface.router.MyRouter;
  * update day:
  */
 public class HomeIntent {
+    private static boolean hasModule() {
+        return ModuleManager.getInstance().hasModule(IHomeProvider.HOME_MAIN_SERVICE);
+    }
     public static void launchHome(int tabType) {
         //HomeActivity
         MyBundle bundle = new MyBundle();
