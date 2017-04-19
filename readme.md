@@ -246,13 +246,20 @@ dependencies {
 这里需要注意的问题是，debug和relase的清单都需要声明需要的activity以及其他组件。debug中还应该配置Application，进行ARouter的初始化。
 经过这样子，我们的每一个module都是可以独立运行的模块了。一般而言，release其实是没有什么东西的，因为release需要的就是我们module本身需要的业务逻辑实现代码，他是作为library去使用的，看自己项目是否需要配置relase。
 最终结果如图：
+
 App独立运行：
 ![](https://github.com/liweijieok/ModularSample/blob/master/art/app1.gif)
+
 App2独立运行：
+
 ![](https://github.com/liweijieok/ModularSample/blob/master/art/app2.gif)
+
 home独立运行：
+
 ![](https://github.com/liweijieok/ModularSample/blob/master/art/home.gif)
+
 module1独立运行：
+
 ![](https://github.com/liweijieok/ModularSample/blob/master/art/module.gif)
 
 ## 组件化开发的建议
