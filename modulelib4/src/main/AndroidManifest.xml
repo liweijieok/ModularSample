@@ -1,10 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.github.io.liweijie.lib4">
 
-    <application android:allowBackup="true"
-                 android:label="@string/app_name"
-                 android:supportsRtl="true"
-    >
+    <application
+        >
+        <activity
+            android:name=".Module4Activity"
+            android:label="module4"/>
 
     </application>
 

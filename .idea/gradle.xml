@@ -12,16 +12,13 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/app2" />
             <option value="$PROJECT_DIR$/base" />
-            <option value="$PROJECT_DIR$/compiler" />
-            <option value="$PROJECT_DIR$/moduleinterface" />
+            <option value="$PROJECT_DIR$/home" />
+            <option value="$PROJECT_DIR$/module6" />
             <option value="$PROJECT_DIR$/modulelib1" />
             <option value="$PROJECT_DIR$/modulelib2" />
             <option value="$PROJECT_DIR$/modulelib3" />
             <option value="$PROJECT_DIR$/modulelib4" />
             <option value="$PROJECT_DIR$/modulelib5" />
-            <option value="$PROJECT_DIR$/moduleview" />
-            <option value="$PROJECT_DIR$/resource" />
-            <option value="$PROJECT_DIR$/util" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

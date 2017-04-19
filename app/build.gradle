@@ -9,7 +9,7 @@ android {
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode 101
         versionName "1.0.1"
-
+        applicationId "com.github.io.liweijie"
         javaCompileOptions {
             annotationProcessorOptions {
                 arguments = [moduleName: project.getName()]
@@ -38,11 +38,15 @@ android {
         })
         testCompile 'junit:junit:4.12'
         annotationProcessor rootProject.ext.dependencies["aroutercompiler"]
-        compile project(':modulelib1')
+        if (rootProject.ext.isMouleDebugHome) {
+            compile project(':home')
+        }
+        if (rootProject.ext.isModule1Debug) {
+            compile project(':modulelib1')
+        }
         compile project(':modulelib2')
         compile project(':modulelib3')
         compile project(':modulelib4')
-        compile project(':modulelib5')
     }
 
 }

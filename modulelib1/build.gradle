@@ -1,4 +1,8 @@
-apply plugin: 'com.android.library'
+if (rootProject.ext.isModule1Debug) {
+    apply plugin: 'com.android.library'
+} else {
+    apply plugin: 'com.android.application'
+}
 
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
@@ -9,7 +13,9 @@ android {
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode 101
         versionName "1.0.1"
-
+        if (!rootProject.ext.isModule1Debug) {
+            applicationId "com.github.io.liweijie.lib1"
+        }
         javaCompileOptions {
             annotationProcessorOptions {
                 arguments = [moduleName: project.getName()]
@@ -31,13 +37,25 @@ android {
 
     }
 
-    dependencies {
-        compile fileTree(dir: 'libs', include: ['*.jar'])
-        androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-            exclude group: 'com.android.support', module: 'support-annotations'
-        })
-        compile project(':base')
-        testCompile 'junit:junit:4.12'
-        annotationProcessor rootProject.ext.dependencies["aroutercompiler"]
+    sourceSets {
+        main {
+            if (!rootProject.ext.isModule1Debug) {
+                manifest.srcFile 'src/debug/AndroidManifest.xml'
+                java.srcDir 'src/debug/java/'
+            } else {
+                manifest.srcFile 'src/release/AndroidManifest.xml'
+                java.srcDir 'src/release/java/'
+            }
+
+        }
     }
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':base')
+    testCompile 'junit:junit:4.12'
+    annotationProcessor rootProject.ext.dependencies["aroutercompiler"]
 }

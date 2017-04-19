@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.github.io.liweijie.lib1">
+    <application
+        android:theme="@style/AppTheme"
+        android:allowBackup="true"
+        android:name=".debug.Module1DebugApplication"
+        android:supportsRtl="true">
+        <activity android:name=".debug.activity.Module1DebugActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

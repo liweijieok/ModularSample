@@ -5,12 +5,11 @@ ext {
             minSdkVersion           : 15,
             targetSdkVersion        : 23,
             androidSupportSdkVersion: "23.4.0",
-            espressoSdkVersion      : "2.2.2"
     ]
 
     dependencies = [
-            arouterapi     : 'com.alibaba:arouter-api:1.0.9',
-            aroutercompiler: 'com.alibaba:arouter-compiler:1.0.4',
+            arouterapi     : 'com.alibaba:arouter-api:1.2.1',
+            aroutercompiler: 'com.alibaba:arouter-compiler:1.1.2',
             supportdesign  : 'com.android.support:design:23.4.0',
             recyclerviewv7 : 'com.android.support:recyclerview-v7:23.4.0',
             supportv4      : 'com.android.support:support-v4:23.4.0',
@@ -18,4 +17,7 @@ ext {
             //分包
             multidex       : 'com.android.support:multidex:1.0.1',
     ]
+
+    isMouleDebugHome = false;
+    isModule1Debug = false;
 }

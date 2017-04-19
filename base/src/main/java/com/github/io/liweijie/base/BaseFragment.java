@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.lang.reflect.Field;
+
 /**
  * 作者：黎伟杰-子然 on 2017/3/21.
  * 邮箱：liweijie@linghit.com
@@ -55,6 +57,23 @@ public abstract class BaseFragment extends Fragment {
     public void onDestroy() {
         log("onDestroy");
         super.onDestroy();
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+
+        //解决嵌套 Fragment 的bug
+        try {
+            Field childFragmentManager = Fragment.class.getDeclaredField("mChildFragmentManager");
+            childFragmentManager.setAccessible(true);
+            childFragmentManager.set(this, null);
+
+        } catch (NoSuchFieldException e) {
+            throw new RuntimeException(e);
+        } catch (IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Nullable

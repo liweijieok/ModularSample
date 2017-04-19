@@ -6,16 +6,13 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app2/app2.iml" filepath="$PROJECT_DIR$/app2/app2.iml" />
       <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
-      <module fileurl="file://$PROJECT_DIR$/compiler/compiler.iml" filepath="$PROJECT_DIR$/compiler/compiler.iml" />
-      <module fileurl="file://$PROJECT_DIR$/moduleinterface/moduleinterface.iml" filepath="$PROJECT_DIR$/moduleinterface/moduleinterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/home/home.iml" filepath="$PROJECT_DIR$/home/home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module6/module6.iml" filepath="$PROJECT_DIR$/module6/module6.iml" />
       <module fileurl="file://$PROJECT_DIR$/modulelib1/modulelib1.iml" filepath="$PROJECT_DIR$/modulelib1/modulelib1.iml" />
       <module fileurl="file://$PROJECT_DIR$/modulelib2/modulelib2.iml" filepath="$PROJECT_DIR$/modulelib2/modulelib2.iml" />
       <module fileurl="file://$PROJECT_DIR$/modulelib3/modulelib3.iml" filepath="$PROJECT_DIR$/modulelib3/modulelib3.iml" />
       <module fileurl="file://$PROJECT_DIR$/modulelib4/modulelib4.iml" filepath="$PROJECT_DIR$/modulelib4/modulelib4.iml" />
       <module fileurl="file://$PROJECT_DIR$/modulelib5/modulelib5.iml" filepath="$PROJECT_DIR$/modulelib5/modulelib5.iml" />
-      <module fileurl="file://$PROJECT_DIR$/moduleview/moduleview.iml" filepath="$PROJECT_DIR$/moduleview/moduleview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/resource/resource.iml" filepath="$PROJECT_DIR$/resource/resource.iml" />
-      <module fileurl="file://$PROJECT_DIR$/util/util.iml" filepath="$PROJECT_DIR$/util/util.iml" />
     </modules>
   </component>
 </project>

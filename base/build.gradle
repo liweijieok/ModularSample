@@ -36,9 +36,13 @@ android {
         androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
             exclude group: 'com.android.support', module: 'support-annotations'
         })
-        compile project(':util')
-        compile project(':resource')
         testCompile 'junit:junit:4.12'
+
+        compile rootProject.ext.dependencies["supportv4"]
+        compile rootProject.ext.dependencies["appcompatv7"]
+        compile rootProject.ext.dependencies["recyclerviewv7"]
+
+        compile rootProject.ext.dependencies["arouterapi"]
         annotationProcessor rootProject.ext.dependencies["aroutercompiler"]
     }
 }
